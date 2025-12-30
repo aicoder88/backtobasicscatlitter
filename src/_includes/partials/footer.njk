@@ -1,0 +1,45 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="header__logo">Back to Basics</a>
+        <p>
+          Simple, honest cat litter solutions. No gimmicks, no chemicals—just
+          what works.
+        </p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">Explore</h4>
+        <div class="footer__links">
+          <a href="/why-simple/">Why Simple</a>
+          <a href="/natural-options/">Natural Options</a>
+          <a href="/ingredients/">Ingredients</a>
+          <a href="/guide/">Buying Guide</a>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">Purrify</h4>
+        <div class="footer__links">
+          <a href="{{ site.purrify.products | utm('footer') }}" target="_blank" rel="noopener">All Products</a>
+          <a href="{{ site.purrify.howItWorks | utm('footer') }}" target="_blank" rel="noopener">How It Works</a>
+          <a href="{{ site.purrify.science | utm('footer') }}" target="_blank" rel="noopener">The Science</a>
+          <a href="{{ site.purrify.faq | utm('footer') }}" target="_blank" rel="noopener">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">Support</h4>
+        <div class="footer__links">
+          <a href="{{ site.purrify.safety | utm('footer') }}" target="_blank" rel="noopener">Safety Info</a>
+          <a href="{{ site.purrify.contact | utm('footer') }}" target="_blank" rel="noopener">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {% year %} Back to Basics Cat Litter. A Purrify resource.</p>
+    </div>
+  </div>
+</footer>

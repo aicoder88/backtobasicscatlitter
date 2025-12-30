@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="/" class="header__logo">Back to Basics</a>
+
+    <nav class="header__nav">
+      {% for item in site.nav %}
+        <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>
+          {{ item.text }}
+        </a>
+      {% endfor %}
+    </nav>
+
+    <a href="{{ site.purrify.products | utm('header') }}" class="btn btn-primary header__cta" target="_blank" rel="noopener">
+      Shop Purrify
+    </a>
+
+    <button class="header__toggle" id="mobile-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    {% for item in site.nav %}
+      <a href="{{ item.url }}">{{ item.text }}</a>
+    {% endfor %}
+    <a href="{{ site.purrify.products | utm('mobile-header') }}" target="_blank" rel="noopener">
+      Shop Purrify →
+    </a>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  toggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('is-open');
+  });
+</script>

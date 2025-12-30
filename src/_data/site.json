@@ -1,0 +1,24 @@
+{
+  "name": "Back to Basics Cat Litter",
+  "url": "https://backtobasicscatlitter.com",
+  "description": "Simple, natural cat litter solutions. No gimmicks, no chemicals—just honest, effective litter that works the way nature intended.",
+  "author": "Back to Basics Cat Litter",
+  "nav": [
+    { "url": "/", "text": "Home" },
+    { "url": "/why-simple/", "text": "Why Simple" },
+    { "url": "/natural-options/", "text": "Natural Options" },
+    { "url": "/ingredients/", "text": "Ingredients" },
+    { "url": "/guide/", "text": "Guide" }
+  ],
+  "purrify": {
+    "home": "https://purrify.ca/",
+    "products": "https://purrify.ca/products",
+    "trial": "https://purrify.ca/products/trial-size",
+    "family": "https://purrify.ca/products/family-pack",
+    "howItWorks": "https://purrify.ca/learn/how-it-works",
+    "science": "https://purrify.ca/learn/science",
+    "safety": "https://purrify.ca/learn/safety",
+    "faq": "https://purrify.ca/learn/faq",
+    "contact": "https://purrify.ca/contact"
+  }
+}

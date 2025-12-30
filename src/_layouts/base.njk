@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ site.author }}">
+
+  <title>{% if title == "Home" %}{{ site.name }}{% else %}{{ title }} | {{ site.name }}{% endif %}</title>
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title }} | {{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}"
+  }
+  </script>
+</head>
+<body>
+  {% include "partials/header.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+</body>
+</html>

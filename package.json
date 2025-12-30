@@ -1,0 +1,16 @@
+{
+  "name": "backtobasicscatlitter",
+  "version": "1.0.0",
+  "description": "Back to Basics Cat Litter - Simple, natural litter solutions",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": ["cat litter", "natural", "simple"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
