@@ -2,23 +2,27 @@
 layout: base.njk
 title: Simple Cat Litter Buying Guide
 description: A no-nonsense guide to choosing cat litter. Cut through the marketing and find what actually works for your cat.
+keywords: cat litter buying guide, simple cat litter guide, how to choose cat litter, natural cat litter guide
 permalink: /guide/
+schemaType: Article
+date: 2024-01-15
+dateModified: 2024-01-15
 ---
 
 <!-- Page Hero -->
-<section class="page-hero">
+<section class="page-hero" role="banner">
   <div class="container">
     <span class="page-hero__badge">No-Nonsense Guide</span>
     <h1>The Simple Buying Guide</h1>
     <p>
       Forget the marketing hype. Here's what actually matters when
-      choosing cat litter—and nothing more.
+      choosing <a href="/natural-options/">cat litter</a>—and nothing more.
     </p>
   </div>
 </section>
 
 <!-- Guide Sections -->
-<section class="section">
+<section class="section" aria-label="Buying Guide Content">
   <div class="container">
     <!-- Section 1 -->
     <div class="guide-section">
@@ -30,7 +34,7 @@ permalink: /guide/
         <p>
           Cats have simple requirements. Litter that absorbs moisture, allows
           digging, and doesn't overwhelm their senses. That's it. Everything
-          else is marketing.
+          else is marketing. Learn <a href="/why-simple/">why simple solutions work best</a>.
         </p>
         <ul class="check-list">
           <li>Absorbs moisture quickly</li>
@@ -39,6 +43,9 @@ permalink: /guide/
           <li>Texture similar to sand or soil</li>
           <li>Low dust for respiratory health</li>
         </ul>
+        <p>
+          <a href="{{ site.purrify.safety | utm('guide-needs') }}">Learn about cat safety and litter choices →</a>
+        </p>
       </div>
     </div>
 
@@ -61,7 +68,7 @@ permalink: /guide/
         </p>
         <p>
           <strong>The simple rule:</strong> Start with clumping. If your cat
-          avoids it, try non-clumping.
+          avoids it, try non-clumping. <a href="{{ site.purrify.products | utm('guide-clumping') }}">See clumping litter options</a>.
         </p>
       </div>
     </div>
@@ -75,19 +82,17 @@ permalink: /guide/
       <div class="guide-content">
         <p>
           More cats means more attention to litter, but the principles stay
-          simple.
+          simple. <a href="{{ site.purrify.family | utm('guide-multicat') }}">Purrify Family Packs</a> are designed for multi-cat homes.
         </p>
         <ul class="check-list">
           <li>One box per cat, plus one extra</li>
           <li>Scoop at least once daily (twice is better)</li>
           <li>Spread boxes throughout your home</li>
           <li>Use litter with strong natural odor control</li>
-          <li>Consider buying in bulk for better value</li>
+          <li>Consider <a href="{{ site.purrify.family | utm('guide-multicat') }}">buying in bulk for better value</a></li>
         </ul>
         <p>
-          <a href="{{ site.purrify.family | utm('guide-multicat') }}">
-            Purrify Family Packs →
-          </a>
+          <a href="{{ site.purrify.family | utm('guide-multicat') }}">Shop Family Packs →</a>
         </p>
       </div>
     </div>
@@ -101,7 +106,7 @@ permalink: /guide/
       <div class="guide-content">
         <p>
           Cats can be particular. Don't switch all at once. The gradual
-          approach works best.
+          approach works best. <a href="{{ site.purrify.faq | utm('guide-transition') }}">Read our transition FAQs</a>.
         </p>
         <ul class="check-list">
           <li><strong>Week 1:</strong> Mix 25% new litter with 75% old</li>
@@ -111,7 +116,8 @@ permalink: /guide/
         </ul>
         <p>
           If your cat shows avoidance at any stage, slow down. Some cats
-          need longer to adjust. That's normal.
+          need longer to adjust. That's normal. 
+          <a href="{{ site.purrify.contact | utm('guide-transition') }}">Contact us for personalized help</a>.
         </p>
       </div>
     </div>
@@ -125,6 +131,7 @@ permalink: /guide/
       <div class="guide-content">
         <p>
           Keep it simple and consistent. Your cat will thank you.
+          <a href="{{ site.purrify.howItWorks | utm('guide-maintenance') }}">Learn how Purrify makes maintenance easier</a>.
         </p>
 
         <div class="benefits-grid" style="margin-top: var(--space-6);">
@@ -153,7 +160,7 @@ permalink: /guide/
       <div class="guide-content">
         <h3>Cat avoiding the box?</h3>
         <ul class="check-list">
-          <li>Try unscented litter</li>
+          <li>Try <a href="/natural-options/">unscented litter</a></li>
           <li>Ensure box is clean enough</li>
           <li>Check box location (quiet, accessible)</li>
           <li>Make sure box is big enough</li>
@@ -162,7 +169,7 @@ permalink: /guide/
         <h3>Odor issues?</h3>
         <ul class="check-list">
           <li>Scoop more frequently</li>
-          <li>Try activated charcoal litter</li>
+          <li>Try <a href="{{ site.purrify.products | utm('guide-odor') }}">activated charcoal litter</a></li>
           <li>Ensure adequate litter depth</li>
           <li>Consider adding a second box</li>
         </ul>
@@ -173,25 +180,51 @@ permalink: /guide/
           <li>Try larger-pellet litter</li>
           <li>Consider a covered or high-sided box</li>
         </ul>
+        
+        <p>
+          <a href="{{ site.purrify.faq | utm('guide-problems') }}">See more solutions in our FAQ →</a>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Section 7: Ingredients Deep Dive -->
+    <div class="guide-section">
+      <div class="guide-section__header">
+        <span class="guide-section__number">7</span>
+        <h2>Understanding Ingredients</h2>
+      </div>
+      <div class="guide-content">
+        <p>
+          Not all ingredients are created equal. <a href="/ingredients/">Learn which simple, natural ingredients</a> work best and which additives to avoid entirely.
+        </p>
+        <ul class="check-list">
+          <li><strong>Activated charcoal/biochar:</strong> Superior odor control naturally</li>
+          <li><strong>Natural clay:</strong> Reliable absorption and clumping</li>
+          <li><strong>Plant fibers:</strong> Renewable and biodegradable</li>
+        </ul>
+        <p>
+          <a href="{{ site.purrify.science | utm('guide-ingredients') }}">Discover the science behind Purrify's ingredients →</a>
+        </p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" aria-labelledby="ready-heading">
   <div class="container">
-    <h2>Ready to Keep It Simple?</h2>
+    <h2 id="ready-heading">Ready to Keep It Simple?</h2>
     <p>
       Purrify is cat litter the way it should be. Natural ingredients,
       powerful odor control, no unnecessary additives.
+      <a href="{{ site.purrify.about | utm('guide-cta') }}">Learn more about Purrify</a>.
     </p>
     <div class="cta-actions">
-      <a href="{{ site.purrify.trial | utm('guide-cta') }}" class="btn btn-primary btn-lg">
+      <a href="{{ site.purrify.trial | utm('guide-cta-primary') }}" class="btn btn-primary btn-lg">
         Try Purrify
       </a>
-      <a href="{{ site.purrify.faq | utm('guide-cta') }}" class="btn btn-secondary btn-lg">
-        FAQs
+      <a href="{{ site.purrify.faq | utm('guide-cta-secondary') }}" class="btn btn-secondary btn-lg">
+        Read FAQs
       </a>
     </div>
   </div>

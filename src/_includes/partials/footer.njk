@@ -1,45 +1,55 @@
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="/" class="header__logo">Back to Basics</a>
+        <a href="/" class="header__logo" aria-label="Back to Basics Cat Litter - Home">Back to Basics</a>
         <p>
           Simple, honest cat litter solutions. No gimmicks, no chemicals—just
-          what works.
+          what works. Learn <a href="/why-simple/">why simple works better</a>.
         </p>
       </div>
 
       <div class="footer__column">
         <h4 class="footer__heading">Explore</h4>
-        <div class="footer__links">
-          <a href="/why-simple/">Why Simple</a>
+        <nav class="footer__links" aria-label="Footer navigation - Site">
+          <a href="/why-simple/">Why Simple Works</a>
           <a href="/natural-options/">Natural Options</a>
-          <a href="/ingredients/">Ingredients</a>
+          <a href="/ingredients/">Ingredients Guide</a>
           <a href="/guide/">Buying Guide</a>
-        </div>
+        </nav>
       </div>
 
       <div class="footer__column">
         <h4 class="footer__heading">Purrify</h4>
-        <div class="footer__links">
-          <a href="{{ site.purrify.products | utm('footer') }}">All Products</a>
-          <a href="{{ site.purrify.howItWorks | utm('footer') }}">How It Works</a>
-          <a href="{{ site.purrify.science | utm('footer') }}">The Science</a>
-          <a href="{{ site.purrify.faq | utm('footer') }}">FAQ</a>
-        </div>
+        <nav class="footer__links" aria-label="Footer navigation - Purrify">
+          <a href="{{ site.purrify.products | utm('footer') }}" rel="noopener">All Products</a>
+          <a href="{{ site.purrify.howItWorks | utm('footer') }}" rel="noopener">How It Works</a>
+          <a href="{{ site.purrify.science | utm('footer') }}" rel="noopener">The Science</a>
+          <a href="{{ site.purrify.faq | utm('footer') }}" rel="noopener">FAQ</a>
+          <a href="{{ site.purrify.blog | utm('footer') }}" rel="noopener">Blog</a>
+        </nav>
       </div>
 
       <div class="footer__column">
         <h4 class="footer__heading">Support</h4>
-        <div class="footer__links">
-          <a href="{{ site.purrify.safety | utm('footer') }}">Safety Info</a>
-          <a href="{{ site.purrify.contact | utm('footer') }}">Contact Us</a>
-        </div>
+        <nav class="footer__links" aria-label="Footer navigation - Support">
+          <a href="{{ site.purrify.safety | utm('footer') }}" rel="noopener">Safety Info</a>
+          <a href="{{ site.purrify.sustainability | utm('footer') }}" rel="noopener">Sustainability</a>
+          <a href="{{ site.purrify.about | utm('footer') }}" rel="noopener">About Purrify</a>
+          <a href="{{ site.purrify.contact | utm('footer') }}" rel="noopener">Contact Us</a>
+        </nav>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <p>&copy; {% year %} Back to Basics Cat Litter. A Purrify resource.</p>
+      <p>&copy; {% year %} Back to Basics Cat Litter. A <a href="{{ site.purrify.home | utm('footer') }}" rel="noopener">Purrify</a> resource.</p>
+      <p class="footer__keywords" style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+        Keywords: <a href="/">back to basics cat litter</a>, 
+        <a href="/why-simple/">simple cat litter solutions</a>, 
+        <a href="/natural-options/">natural cat litter</a>, 
+        <a href="/ingredients/">cat litter ingredients</a>, 
+        <a href="{{ site.purrify.products | utm('footer-keywords') }}">best natural cat litter Canada</a>
+      </p>
     </div>
   </div>
 </footer>

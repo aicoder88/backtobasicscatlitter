@@ -3,7 +3,9 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {%- for page in collections.all %}
   {%- if page.url and not page.data.eleventyExcludeFromCollections %}
   <url>
@@ -11,6 +13,9 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date.toISOString().split('T')[0] }}</lastmod>
     <changefreq>{% if page.url == "/" %}weekly{% else %}monthly{% endif %}</changefreq>
     <priority>{% if page.url == "/" %}1.0{% else %}0.8{% endif %}</priority>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ page.url }}" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="{{ site.urlFrench }}{{ page.url }}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
   </url>
   {%- endif %}
   {%- endfor %}

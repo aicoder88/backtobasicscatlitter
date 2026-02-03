@@ -971,3 +971,156 @@ ul, ol {
 .ingredient-card--featured ul li::before {
   color: var(--color-sage-light);
 }
+
+
+/* ================================
+   Accessibility & SEO Enhancements
+   ================================ */
+
+/* Skip Link for Keyboard Navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-earth);
+  color: var(--color-white);
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  font-weight: 500;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Visually Hidden (Screen Reader Only) */
+.visually-hidden,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus Visible for Better Keyboard Navigation */
+*:focus {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles for Better Print SEO */
+@media print {
+  .skip-link,
+  .header__cta,
+  .header__toggle,
+  .mobile-nav,
+  .cta-section,
+  .sidebar-card a[href^="http"] {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    word-break: break-all;
+  }
+  
+  a[href^="/"]::after {
+    content: " (https://www.backtobasicscatlitter.com" attr(href) ")";
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text: #000;
+    --color-text-secondary: #333;
+    --color-earth: #3D3225;
+    --color-sage: #4A5A3A;
+  }
+  
+  .btn-primary {
+    border: 2px solid #000;
+  }
+  
+  .btn-secondary {
+    border: 2px solid #000;
+  }
+}
+
+/* Text Utilities for SEO */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: var(--space-4);
+}
+
+/* ARIA Hidden styling helpers */
+[aria-hidden="true"] {
+  pointer-events: none;
+}
+
+/* Better link underlines for accessibility */
+a:not(.btn):not(.header__logo):not(.header__nav a) {
+  text-decoration: underline;
+  text-decoration-color: var(--color-sage-light);
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.2s;
+}
+
+a:not(.btn):not(.header__logo):not(.header__nav a):hover,
+a:not(.btn):not(.header__logo):not(.header__nav a):focus {
+  text-decoration-color: var(--color-sage-dark);
+}

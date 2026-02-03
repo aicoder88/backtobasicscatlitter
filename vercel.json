@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "backtobasicscatlitter.com" }],
+      "destination": "https://www.backtobasicscatlitter.com/:path*",
+      "permanent": true
+    }
+  ]
+}

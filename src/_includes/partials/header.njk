@@ -1,31 +1,35 @@
-<header class="header">
+<header class="header" role="banner">
   <div class="container header__container">
-    <a href="/" class="header__logo">Back to Basics</a>
+    <a href="/" class="header__logo" aria-label="Back to Basics Cat Litter - Home">
+      Back to Basics
+    </a>
 
-    <nav class="header__nav">
+    <nav class="header__nav" role="navigation" aria-label="Main navigation">
       {% for item in site.nav %}
-        <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>
+        <a href="{{ item.url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>
           {{ item.text }}
         </a>
       {% endfor %}
     </nav>
 
-    <a href="{{ site.purrify.products | utm('header') }}" class="btn btn-primary header__cta">
+    <a href="{{ site.purrify.products | utm('header') }}" class="btn btn-primary header__cta" rel="nofollow noopener">
       Shop Purrify
     </a>
 
-    <button class="header__toggle" id="mobile-toggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="header__toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
     </button>
   </div>
 
-  <nav class="mobile-nav" id="mobile-nav">
+  <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation" hidden>
     {% for item in site.nav %}
-      <a href="{{ item.url }}">{{ item.text }}</a>
+      <a href="{{ item.url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>
+        {{ item.text }}
+      </a>
     {% endfor %}
-    <a href="{{ site.purrify.products | utm('mobile-header') }}">
+    <a href="{{ site.purrify.products | utm('mobile-header') }}" rel="nofollow noopener">
       Shop Purrify →
     </a>
   </nav>
@@ -36,6 +40,8 @@
   const mobileNav = document.getElementById('mobile-nav');
 
   toggle.addEventListener('click', () => {
-    mobileNav.classList.toggle('is-open');
+    const isOpen = mobileNav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen);
+    mobileNav.hidden = !isOpen;
   });
 </script>

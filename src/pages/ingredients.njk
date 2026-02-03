@@ -2,26 +2,31 @@
 layout: base.njk
 title: Cat Litter Ingredients Guide
 description: Understand what goes into cat litter. Learn which simple, natural ingredients work best and which additives to avoid.
+keywords: cat litter ingredients, natural cat litter ingredients, activated charcoal litter, bentonite clay, what to avoid in cat litter
 permalink: /ingredients/
+schemaType: Article
+date: 2024-01-15
+dateModified: 2024-01-15
 ---
 
 <!-- Page Hero -->
-<section class="page-hero">
+<section class="page-hero" role="banner">
   <div class="container">
     <span class="page-hero__badge">Honest Ingredients</span>
     <h1>What's Really in Your Litter</h1>
     <p>
       The fewer ingredients, the better. Here's what you need to know
       about what goes into cat litter—and what shouldn't.
+      <a href="/natural-options/">Compare natural litter types</a>.
     </p>
   </div>
 </section>
 
 <!-- Good Ingredients -->
-<section class="section">
+<section class="section" aria-labelledby="good-ingredients-heading">
   <div class="container">
     <div class="section-header">
-      <h2>Simple Ingredients That Work</h2>
+      <h2 id="good-ingredients-heading">Simple Ingredients That Work</h2>
       <p>
         These natural materials have proven themselves effective for
         generations. No gimmicks, just function.
@@ -31,7 +36,7 @@ permalink: /ingredients/
     <div class="ingredients-grid">
       <div class="ingredient-card ingredient-card--featured">
         <span class="page-hero__badge">Star Ingredient</span>
-        <div class="ingredient-card__icon">●</div>
+        <div class="ingredient-card__icon" aria-hidden="true">●</div>
         <h3>Activated Charcoal / Biochar</h3>
         <p>
           The gold standard in natural odor elimination. Made from
@@ -56,7 +61,7 @@ permalink: /ingredients/
       </div>
 
       <div class="ingredient-card">
-        <div class="ingredient-card__icon">🪨</div>
+        <div class="ingredient-card__icon" aria-hidden="true">🪨</div>
         <h3>Bentonite Clay</h3>
         <p>
           A naturally occurring clay known for exceptional absorption
@@ -72,7 +77,7 @@ permalink: /ingredients/
       </div>
 
       <div class="ingredient-card">
-        <div class="ingredient-card__icon">🌲</div>
+        <div class="ingredient-card__icon" aria-hidden="true">🌲</div>
         <h3>Wood Fiber</h3>
         <p>
           Sustainably sourced sawdust and wood pellets provide natural
@@ -88,7 +93,7 @@ permalink: /ingredients/
       </div>
 
       <div class="ingredient-card">
-        <div class="ingredient-card__icon">🌾</div>
+        <div class="ingredient-card__icon" aria-hidden="true">🌾</div>
         <h3>Plant Materials</h3>
         <p>
           Corn, wheat, and other plant-based ingredients offer renewable,
@@ -107,10 +112,10 @@ permalink: /ingredients/
 </section>
 
 <!-- Ingredients to Avoid -->
-<section class="section comparison">
+<section class="section comparison" aria-labelledby="avoid-heading">
   <div class="container">
     <div class="section-header">
-      <h2>What to Avoid</h2>
+      <h2 id="avoid-heading">What to Avoid</h2>
       <p>
         These common additives are marketing solutions, not cat solutions.
         Your litter doesn't need them.
@@ -119,41 +124,46 @@ permalink: /ingredients/
 
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="benefit-card__icon">🚫</div>
+        <div class="benefit-card__icon" aria-hidden="true">🚫</div>
         <h3>Artificial Fragrances</h3>
-        <p>Overwhelm cats' sensitive noses. Often cause litter box avoidance.</p>
+        <p>Overwhelm cats' sensitive noses. Often cause litter box avoidance.
+        Choose <a href="/natural-options/">unscented natural options</a> instead.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">🚫</div>
+        <div class="benefit-card__icon" aria-hidden="true">🚫</div>
         <h3>Chemical Deodorizers</h3>
-        <p>Mask odors instead of eliminating them. May irritate respiratory systems.</p>
+        <p>Mask odors instead of eliminating them. May irritate respiratory systems.
+        <a href="{{ site.purrify.safety | utm('ingredients') }}">Learn about safe alternatives</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">🚫</div>
+        <div class="benefit-card__icon" aria-hidden="true">🚫</div>
         <h3>Synthetic Clumping Agents</h3>
-        <p>Unnecessary with quality clay. May be harmful if ingested during grooming.</p>
+        <p>Unnecessary with quality clay. May be harmful if ingested during grooming.
+        <a href="/why-simple/">See why simple is safer</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">🚫</div>
+        <div class="benefit-card__icon" aria-hidden="true">🚫</div>
         <h3>Dyes and Colors</h3>
-        <p>Purely cosmetic. Cats don't care what color their litter is.</p>
+        <p>Purely cosmetic. Cats don't care what color their litter is.
+        Focus on <a href="/guide/">what actually matters</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Reading Labels -->
-<section class="section">
+<section class="section" aria-labelledby="labels-heading">
   <div class="container">
     <div class="content-grid">
       <div class="content-main">
-        <h2>How to Read Litter Labels</h2>
+        <h2 id="labels-heading">How to Read Litter Labels</h2>
         <p>
           Manufacturers don't always make it easy. Here's what to look for
           when shopping for honest, simple litter.
+          <a href="/guide/">Get our complete buying guide</a>.
         </p>
 
         <h3>Good Signs</h3>
@@ -173,16 +183,68 @@ permalink: /ingredients/
           <li>"Proprietary formula"</li>
           <li>No dust claims at all</li>
         </ul>
+        
+        <h3>Questions to Ask</h3>
+        <p>
+          When in doubt, <a href="{{ site.purrify.contact | utm('ingredients') }}">reach out to manufacturers</a>.
+          Reputable companies are transparent about their ingredients and sourcing.
+        </p>
       </div>
 
       <aside class="content-sidebar">
         <div class="sidebar-card">
           <h4>Quick Rule</h4>
           <ul>
-            <li>📝 Fewer ingredients = better</li>
+            <li>📝 <a href="/ingredients/">Fewer ingredients</a> = better</li>
             <li>🔍 Can you pronounce them?</li>
             <li>🌿 Natural > synthetic</li>
             <li>👃 Unscented is best</li>
+          </ul>
+        </div>
+        <div class="sidebar-card" style="margin-top: 1.5rem;">
+          <h4>Purrify's Promise</h4>
+          <p>Just two ingredients: biochar and natural clay.</p>
+          <p style="margin-top: 0.5rem;">
+            <a href="{{ site.purrify.science | utm('ingredients-sidebar') }}">See the science →</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Sustainability Section -->
+<section class="section comparison" aria-labelledby="sustainability-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="sustainability-heading">Ingredients & Sustainability</h2>
+      <p>
+        What your litter is made of affects more than just your cat—it impacts the planet.
+      </p>
+    </div>
+    <div class="content-grid">
+      <div class="content-main">
+        <h3>Renewable vs. Non-Renewable</h3>
+        <p>
+          Plant-based ingredients like corn, wheat, and wood are renewable—they regrow
+          annually. Clay, while natural, is mined and not renewable. Biochar from
+          sustainable forestry offers a middle ground: carbon-negative and renewable.
+        </p>
+        <h3>Biodegradability</h3>
+        <p>
+          Many natural litters are compostable (though not with pet waste). This reduces
+          landfill impact compared to synthetic litters that persist for centuries.
+          <a href="{{ site.purrify.sustainability | utm('ingredients') }}">Learn about our eco-friendly approach</a>.
+        </p>
+      </div>
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h4>Eco Impact Guide</h4>
+          <ul>
+            <li>🌱 Plant-based: Compostable</li>
+            <li>🌲 Biochar: Carbon-negative</li>
+            <li>🪨 Clay: Natural but mined</li>
+            <li>⚗️ Synthetic: Long-lasting waste</li>
           </ul>
         </div>
       </aside>
@@ -191,15 +253,16 @@ permalink: /ingredients/
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" aria-labelledby="simple-ingredients-heading">
   <div class="container">
-    <h2>Simple Ingredients Done Right</h2>
+    <h2 id="simple-ingredients-heading">Simple Ingredients Done Right</h2>
     <p>
       Purrify keeps it simple: natural biochar and clay. That's it.
       No fragrances, no chemicals, no gimmicks.
+      <a href="{{ site.purrify.about | utm('ingredients-cta') }}">Learn more about our philosophy</a>.
     </p>
     <div class="cta-actions">
-      <a href="{{ site.purrify.products | utm('ingredients-cta') }}" class="btn btn-primary btn-lg">
+      <a href="{{ site.purrify.products | utm('ingredients-cta-primary') }}" class="btn btn-primary btn-lg">
         Shop Purrify
       </a>
       <a href="/guide/" class="btn btn-secondary btn-lg">

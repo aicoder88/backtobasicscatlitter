@@ -2,30 +2,35 @@
 layout: base.njk
 title: Natural Cat Litter Options
 description: Explore natural cat litter alternatives including clay, wood, corn, and paper. Find the simple, honest option that works best for your cat.
+keywords: natural cat litter options, clay cat litter, wood pine litter, corn cat litter, wheat litter, paper cat litter, biochar litter
 permalink: /natural-options/
+schemaType: Article
+date: 2024-01-15
+dateModified: 2024-01-15
 ---
 
 <!-- Page Hero -->
-<section class="page-hero">
+<section class="page-hero" role="banner">
   <div class="container">
     <span class="page-hero__badge">Natural Choices</span>
     <h1>Natural Litter Options</h1>
     <p>
       From traditional clays to plant-based alternatives, these are the
       simple, natural materials that have been keeping litter boxes fresh
-      for generations.
+      for generations. <a href="/ingredients/">Learn about specific ingredients</a>.
     </p>
   </div>
 </section>
 
 <!-- Options Grid -->
-<section class="section">
+<section class="section" aria-labelledby="options-heading">
   <div class="container">
+    <h2 id="options-heading" class="visually-hidden">Natural Litter Types</h2>
     <div class="options-grid">
       <div class="option-card option-card--featured">
         <div class="option-card__header">
           <span class="page-hero__badge">Recommended</span>
-          <div class="option-card__icon">●</div>
+          <div class="option-card__icon" aria-hidden="true">●</div>
           <h3>Activated Charcoal / Biochar</h3>
           <p class="option-card__intro">
             The best of simple and effective. Natural carbon with powerful
@@ -49,7 +54,7 @@ permalink: /natural-options/
 
       <div class="option-card">
         <div class="option-card__header">
-          <div class="option-card__icon">🪨</div>
+          <div class="option-card__icon" aria-hidden="true">🪨</div>
           <h3>Natural Clay</h3>
           <p class="option-card__intro">
             The original and still one of the most effective options.
@@ -68,7 +73,7 @@ permalink: /natural-options/
 
       <div class="option-card">
         <div class="option-card__header">
-          <div class="option-card__icon">🌲</div>
+          <div class="option-card__icon" aria-hidden="true">🌲</div>
           <h3>Wood / Pine</h3>
           <p class="option-card__intro">
             Sustainable sawdust and wood pellets with natural fresh scent.
@@ -87,7 +92,7 @@ permalink: /natural-options/
 
       <div class="option-card">
         <div class="option-card__header">
-          <div class="option-card__icon">🌽</div>
+          <div class="option-card__icon" aria-hidden="true">🌽</div>
           <h3>Corn</h3>
           <p class="option-card__intro">
             Renewable, flushable, and surprisingly effective.
@@ -106,7 +111,7 @@ permalink: /natural-options/
 
       <div class="option-card">
         <div class="option-card__header">
-          <div class="option-card__icon">🌾</div>
+          <div class="option-card__icon" aria-hidden="true">🌾</div>
           <h3>Wheat</h3>
           <p class="option-card__intro">
             Natural enzymes help control odor without additives.
@@ -125,7 +130,7 @@ permalink: /natural-options/
 
       <div class="option-card">
         <div class="option-card__header">
-          <div class="option-card__icon">📄</div>
+          <div class="option-card__icon" aria-hidden="true">📄</div>
           <h3>Paper</h3>
           <p class="option-card__intro">
             Recycled paper pellets, gentle and dust-free.
@@ -146,10 +151,10 @@ permalink: /natural-options/
 </section>
 
 <!-- Comparison Tips -->
-<section class="section comparison">
+<section class="section comparison" aria-labelledby="choose-heading">
   <div class="container">
     <div class="section-header">
-      <h2>How to Choose</h2>
+      <h2 id="choose-heading">How to Choose</h2>
       <p>
         Every cat is different. Here's how to find the right natural
         option for yours.
@@ -163,6 +168,7 @@ permalink: /natural-options/
           Most cats prefer fine-grained, sand-like textures. If switching from
           clay, look for natural alternatives with similar granule size. Some
           cats dislike the feel of pellets initially.
+          <a href="{{ site.purrify.faq | utm('natural-options') }}">Get tips for picky cats</a>.
         </p>
 
         <h3>Think About Odor Control</h3>
@@ -170,6 +176,7 @@ permalink: /natural-options/
           If odor is your main concern, activated charcoal/biochar options
           offer the most powerful natural odor elimination. Wood and wheat
           also have good natural odor-fighting properties.
+          <a href="{{ site.purrify.science | utm('natural-options') }}">Learn the science of natural odor control</a>.
         </p>
 
         <h3>Environmental Impact</h3>
@@ -177,6 +184,7 @@ permalink: /natural-options/
           If sustainability matters to you, look for plant-based options like
           corn, wheat, or wood. These are renewable and often compostable.
           Clay is natural but not renewable.
+          <a href="{{ site.purrify.sustainability | utm('natural-options') }}">See our sustainability commitment</a>.
         </p>
 
         <h3>Your Cat's Health</h3>
@@ -184,6 +192,7 @@ permalink: /natural-options/
           For cats with respiratory sensitivities, paper and wood pellets
           tend to produce the least dust. For post-surgery cats, paper is
           often recommended as it won't stick to wounds.
+          <a href="{{ site.purrify.safety | utm('natural-options') }}">Read about cat health and litter</a>.
         </p>
       </div>
 
@@ -191,11 +200,58 @@ permalink: /natural-options/
         <div class="sidebar-card">
           <h4>Quick Guide</h4>
           <ul>
-            <li>🏆 Best odor control: Biochar</li>
+            <li>🏆 Best odor control: <a href="{{ site.purrify.products | utm('natural-options-quick') }}">Biochar</a></li>
             <li>🌍 Most eco-friendly: Wood/Corn</li>
             <li>💨 Lowest dust: Paper</li>
             <li>🐱 Most familiar feel: Clay</li>
           </ul>
+          <p style="margin-top: 1rem;">
+            <a href="/guide/">Full Buying Guide →</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Recommendation Section -->
+<section class="section" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="featured-heading">Our Recommendation</h2>
+      <p>
+        After researching all natural options, we believe biochar-based litter offers
+        the best combination of effectiveness and simplicity.
+      </p>
+    </div>
+    <div class="content-grid">
+      <div class="content-main">
+        <h3>Why Biochar Stands Out</h3>
+        <p>
+          Biochar combines the natural odor-trapping power of activated charcoal with
+          sustainable sourcing. It works without artificial fragrances, making it ideal
+          for cats with sensitive noses.
+        </p>
+        <ul class="check-list">
+          <li><strong>Natural:</strong> Made from renewable wood sources</li>
+          <li><strong>Effective:</strong> Thousands of odor-trapping pores per gram</li>
+          <li><strong>Safe:</strong> Non-toxic if accidentally ingested</li>
+          <li><strong>Sustainable:</strong> Carbon-negative production process</li>
+        </ul>
+        <p>
+          <a href="{{ site.purrify.science | utm('natural-options-rec') }}">Learn more about biochar technology →</a>
+        </p>
+      </div>
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h4>Try Purrify</h4>
+          <p>Natural biochar-based litter with proven results.</p>
+          <a href="{{ site.purrify.trial | utm('natural-options-rec') }}" class="btn btn-primary" style="display: block; text-align: center; margin-top: 1rem;">
+            Get a Trial
+          </a>
+          <p style="margin-top: 1rem; font-size: 0.875rem;">
+            <a href="{{ site.purrify.reviews | utm('natural-options-rec') }}">Read customer reviews</a>
+          </p>
         </div>
       </aside>
     </div>
@@ -203,15 +259,16 @@ permalink: /natural-options/
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" aria-labelledby="best-of-natural-heading">
   <div class="container">
-    <h2>The Best of Natural</h2>
+    <h2 id="best-of-natural-heading">The Best of Natural</h2>
     <p>
       Purrify combines biochar with natural clays for unbeatable odor control
       and familiar texture your cat will love.
+      <a href="{{ site.purrify.about | utm('natural-options-cta') }}">Learn about our story</a>.
     </p>
     <div class="cta-actions">
-      <a href="{{ site.purrify.products | utm('natural-options-cta') }}" class="btn btn-primary btn-lg">
+      <a href="{{ site.purrify.products | utm('natural-options-cta-primary') }}" class="btn btn-primary btn-lg">
         Shop Purrify
       </a>
       <a href="/ingredients/" class="btn btn-secondary btn-lg">

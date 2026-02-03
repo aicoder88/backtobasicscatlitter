@@ -4,5 +4,11 @@ eleventyExcludeFromCollections: true
 ---
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+Disallow: /_site/
+
+# Crawl-delay: 10
 
 Sitemap: {{ site.url }}/sitemap.xml

@@ -1,8 +1,20 @@
 {
   "name": "Back to Basics Cat Litter",
-  "url": "https://backtobasicscatlitter.com",
+  "nameShort": "Back to Basics",
+  "url": "https://www.backtobasicscatlitter.com",
+  "urlFrench": "https://www.backtobasicscatlitter.com/fr",
   "description": "Simple, natural cat litter solutions. No gimmicks, no chemicals—just honest, effective litter that works the way nature intended.",
+  "keywords": "back to basics cat litter, simple cat litter solutions, basic cat care, traditional cat litter, natural litter basics, natural cat litter, unscented cat litter, eco-friendly cat litter",
   "author": "Back to Basics Cat Litter",
+  "publisher": "Back to Basics Cat Litter",
+  "twitter": "@backtobasicslit",
+  "locale": "en_CA",
+  "language": "en",
+  "robots": "index, follow",
+  "themeColor": "#2d5016",
+  "favicon": "/favicon.svg",
+  "ogImage": "/og-image.png",
+  "ogType": "website",
   "nav": [
     { "url": "/", "text": "Home" },
     { "url": "/why-simple/", "text": "Why Simple" },
@@ -19,6 +31,10 @@
     "science": "https://purrify.ca/learn/science",
     "safety": "https://purrify.ca/learn/safety",
     "faq": "https://purrify.ca/learn/faq",
-    "contact": "https://purrify.ca/contact"
+    "contact": "https://purrify.ca/contact",
+    "blog": "https://purrify.ca/blog",
+    "about": "https://purrify.ca/about",
+    "reviews": "https://purrify.ca/reviews",
+    "sustainability": "https://purrify.ca/sustainability"
   }
 }

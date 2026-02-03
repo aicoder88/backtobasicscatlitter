@@ -2,10 +2,12 @@
 layout: base.njk
 title: Home
 description: Simple, natural cat litter solutions. No gimmicks, no chemicals—just honest, effective litter that works the way nature intended.
+keywords: back to basics cat litter, simple cat litter, natural cat litter, unscented cat litter, basic cat care
+schemaType: WebPage
 ---
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" role="banner">
   <div class="container">
     <div class="hero__content">
       <span class="hero__badge">Simple & Natural</span>
@@ -13,6 +15,7 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
       <p class="hero__subtitle">
         Your cat doesn't need fancy formulas or synthetic fragrances.
         They need litter that works—simple, natural, and honest.
+        Discover <a href="/why-simple/">why simple cat litter</a> often outperforms complicated alternatives.
       </p>
       <div class="hero__actions">
         <a href="/why-simple/" class="btn btn-primary btn-lg">Learn Why Simple Works</a>
@@ -23,41 +26,43 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
 </section>
 
 <!-- Features Section -->
-<section class="section">
+<section class="section" aria-labelledby="simple-approach-heading">
   <div class="container">
     <div class="section-header">
-      <h2>The Simple Approach</h2>
+      <h2 id="simple-approach-heading">The Simple Approach</h2>
       <p>
         Sometimes the best solution is the simplest one. Here's what
-        makes basic, natural litter work so well.
+        makes basic, <a href="/natural-options/">natural cat litter</a> work so well.
       </p>
     </div>
 
     <div class="features__grid">
       <div class="feature-card">
-        <div class="feature-card__icon">🌿</div>
+        <div class="feature-card__icon" aria-hidden="true">🌿</div>
         <h3>Natural Ingredients</h3>
         <p>
           No artificial chemicals, no synthetic fragrances. Just natural
           materials that absorb moisture and control odor the way nature intended.
+          Learn more about <a href="/ingredients/">cat litter ingredients</a> that actually work.
         </p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-card__icon">✓</div>
+        <div class="feature-card__icon" aria-hidden="true">✓</div>
         <h3>Proven Effective</h3>
         <p>
           Basic doesn't mean less effective. Natural clays and plant materials
           have been keeping litter boxes fresh for generations.
+          See our <a href="/guide/">simple cat litter buying guide</a> for tips.
         </p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-card__icon">🐱</div>
+        <div class="feature-card__icon" aria-hidden="true">🐱</div>
         <h3>Cat Preferred</h3>
         <p>
           Cats instinctively prefer simple, unscented materials. No adjustment
-          period—they'll use it right away.
+          period—they'll use it right away. <a href="{{ site.purrify.howItWorks | utm('homepage-feature') }}">See how natural litter works</a>.
         </p>
       </div>
     </div>
@@ -65,12 +70,12 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
 </section>
 
 <!-- Comparison Section -->
-<section class="section comparison">
+<section class="section comparison" aria-labelledby="comparison-heading">
   <div class="container">
     <div class="section-header">
-      <h2>Complicated vs. Simple</h2>
+      <h2 id="comparison-heading">Complicated vs. Simple</h2>
       <p>
-        See how the back-to-basics approach compares to overly
+        See how the <a href="/why-simple/">back-to-basics approach</a> compares to overly
         engineered alternatives.
       </p>
     </div>
@@ -102,10 +107,10 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
 </section>
 
 <!-- Benefits Section -->
-<section class="section">
+<section class="section" aria-labelledby="why-cats-love-simple-heading">
   <div class="container">
     <div class="section-header">
-      <h2>Why Cats Love Simple</h2>
+      <h2 id="why-cats-love-simple-heading">Why Cats Love Simple</h2>
       <p>
         Your cat's preferences haven't changed in thousands of years.
         Here's why they'll appreciate the basics.
@@ -114,46 +119,50 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
 
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="benefit-card__icon">👃</div>
+        <div class="benefit-card__icon" aria-hidden="true">👃</div>
         <h3>Unscented</h3>
-        <p>Cats have 200 million scent receptors. Strong fragrances overwhelm them.</p>
+        <p>Cats have 200 million scent receptors. Strong fragrances overwhelm them. 
+        <a href="{{ site.purrify.products | utm('homepage-benefits') }}">Try unscented natural litter</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">🪨</div>
+        <div class="benefit-card__icon" aria-hidden="true">🪨</div>
         <h3>Natural Texture</h3>
-        <p>Mimics the sand and soil cats instinctively seek for burying waste.</p>
+        <p>Mimics the sand and soil cats instinctively seek for burying waste.
+        <a href="/natural-options/">Explore natural texture options</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">💨</div>
+        <div class="benefit-card__icon" aria-hidden="true">💨</div>
         <h3>Low Dust</h3>
-        <p>Simple processing means cleaner formulas with less airborne particles.</p>
+        <p>Simple processing means cleaner formulas with less airborne particles.
+        Better for your cat's <a href="{{ site.purrify.safety | utm('homepage-benefits') }}">respiratory health</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">♻️</div>
+        <div class="benefit-card__icon" aria-hidden="true">♻️</div>
         <h3>Sustainable</h3>
-        <p>Many basic litters are biodegradable and easier on the environment.</p>
+        <p>Many basic litters are biodegradable and easier on the environment.
+        <a href="{{ site.purrify.sustainability | utm('homepage-benefits') }}">Learn about sustainable litter</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Purrify CTA -->
-<section class="cta-section">
+<section class="cta-section" aria-labelledby="ready-to-try-heading">
   <div class="container">
-    <h2>Ready to Try Simple?</h2>
+    <h2 id="ready-to-try-heading">Ready to Try Simple?</h2>
     <p>
-      Purrify combines the best of simple, natural ingredients with modern
+      <a href="{{ site.purrify.home | utm('homepage-cta') }}">Purrify</a> combines the best of simple, natural ingredients with modern
       odor control science. Biochar-powered, no artificial fragrances, just
-      effective.
+      effective. <a href="{{ site.purrify.science | utm('homepage-cta') }}">Discover the science behind biochar</a>.
     </p>
     <div class="cta-actions">
-      <a href="{{ site.purrify.products | utm('homepage-cta') }}" class="btn btn-primary btn-lg">
+      <a href="{{ site.purrify.products | utm('homepage-cta-primary') }}" class="btn btn-primary btn-lg">
         Shop Purrify
       </a>
-      <a href="{{ site.purrify.howItWorks | utm('homepage-cta') }}" class="btn btn-secondary btn-lg">
+      <a href="{{ site.purrify.howItWorks | utm('homepage-cta-secondary') }}" class="btn btn-secondary btn-lg">
         How It Works
       </a>
     </div>
@@ -161,20 +170,21 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
 </section>
 
 <!-- Guide Teaser -->
-<section class="section">
+<section class="section" aria-labelledby="buying-guide-heading">
   <div class="container">
     <div class="content-grid">
       <div class="content-main">
-        <h2>Your Simple Buying Guide</h2>
+        <h2 id="buying-guide-heading">Your Simple Buying Guide</h2>
         <p>
-          Choosing cat litter doesn't have to be complicated. Our guide cuts
+          Choosing cat litter doesn't have to be complicated. Our <a href="/guide/">guide</a> cuts
           through the marketing noise to help you find what actually works.
+          Also check out <a href="{{ site.purrify.faq | utm('homepage-guide') }}">frequently asked questions</a> about natural litter.
         </p>
         <ul class="check-list">
           <li>What ingredients actually matter</li>
           <li>How to read labels honestly</li>
           <li>Simple tips for multi-cat homes</li>
-          <li>Transitioning without stress</li>
+          <li><a href="{{ site.purrify.blog | utm('homepage-guide') }}">Transitioning tips from our blog</a></li>
         </ul>
         <a href="/guide/" class="btn btn-primary">Read the Guide</a>
       </div>
@@ -182,13 +192,35 @@ description: Simple, natural cat litter solutions. No gimmicks, no chemicals—j
         <div class="sidebar-card">
           <h4>Quick Tips</h4>
           <ul>
-            <li>🌿 Fewer ingredients = fewer problems</li>
+            <li>🌿 <a href="/ingredients/">Fewer ingredients</a> = fewer problems</li>
             <li>👃 If you can smell it, it's too strong</li>
-            <li>🐱 Let your cat's behavior guide you</li>
+            <li>🐱 <a href="{{ site.purrify.about | utm('homepage-sidebar') }}">Learn about Purrify</a></li>
             <li>♻️ Simple often means sustainable</li>
           </ul>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Success Section -->
+<section class="section" aria-labelledby="happy-cats-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="happy-cats-heading">Happy Cats, Happy Owners</h2>
+      <p>
+        Join thousands of cat owners who've made the switch to simple.
+        <a href="{{ site.purrify.reviews | utm('homepage-reviews') }}">Read customer reviews</a> 
+        and see why cats love the natural approach.
+      </p>
+    </div>
+    <div class="text-center">
+      <a href="{{ site.purrify.trial | utm('homepage-trial') }}" class="btn btn-primary btn-lg">
+        Try a Trial Size
+      </a>
+      <p class="mt-4">
+        <small>Not sure? <a href="{{ site.purrify.contact | utm('homepage-contact') }}">Contact us</a> for personalized recommendations.</small>
+      </p>
     </div>
   </div>
 </section>

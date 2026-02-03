@@ -2,24 +2,28 @@
 layout: base.njk
 title: Why Simple Cat Litter Works Better
 description: Discover why simple, natural cat litter often outperforms complicated formulas. Learn the science behind basic ingredients and why cats prefer them.
+keywords: why simple cat litter works, natural cat litter benefits, cat litter science, unscented cat litter benefits
 permalink: /why-simple/
+schemaType: Article
+date: 2024-01-15
+dateModified: 2024-01-15
 ---
 
 <!-- Page Hero -->
-<section class="page-hero">
+<section class="page-hero" role="banner">
   <div class="container">
     <span class="page-hero__badge">The Simple Truth</span>
     <h1>Why Simple Works Better</h1>
     <p>
       The pet industry wants you to believe more ingredients means better
-      performance. The truth? Cats have been just fine with simple solutions
+      performance. The truth? Cats have been just fine with <a href="/natural-options/">simple solutions</a>
       for thousands of years.
     </p>
   </div>
 </section>
 
 <!-- Main Content -->
-<section class="section">
+<section class="section" aria-label="Main Content">
   <div class="container">
     <div class="content-grid">
       <div class="content-main">
@@ -41,7 +45,7 @@ permalink: /why-simple/
         <p>
           A cat's requirements are straightforward: something that absorbs
           moisture, allows digging, and doesn't assault their sensitive noses.
-          Natural materials like clay, wood, and plant fibers have been meeting
+          <a href="/ingredients/">Natural materials</a> like clay, wood, and plant fibers have been meeting
           these needs perfectly for generations.
         </p>
         <p>
@@ -59,9 +63,10 @@ permalink: /why-simple/
           reasons cats avoid their boxes.
         </p>
         <p>
-          Simple litters control odor through absorption, not masking. Natural
+          <a href="/natural-options/">Simple litters</a> control odor through absorption, not masking. Natural
           materials like activated charcoal, clay, and certain plant fibers
           trap odor molecules rather than covering them with perfume.
+          <a href="{{ site.purrify.science | utm('why-simple') }}">Learn the science behind natural odor control</a>.
         </p>
 
         <h3>Health Considerations</h3>
@@ -70,6 +75,14 @@ permalink: /why-simple/
           irritants they're exposed to. Cats groom themselves constantly,
           meaning anything that sticks to their paws ends up ingested. Simple,
           natural ingredients are generally safer if accidentally consumed.
+          <a href="{{ site.purrify.safety | utm('why-simple') }}">Read about litter safety</a>.
+        </p>
+        
+        <h3>The Environmental Impact</h3>
+        <p>
+          Simple often means sustainable. Many basic litters use renewable,
+          biodegradable ingredients that are easier on the environment than
+          synthetic alternatives. <a href="{{ site.purrify.sustainability | utm('why-simple') }}">Discover Purrify's sustainability commitment</a>.
         </p>
       </div>
 
@@ -82,6 +95,9 @@ permalink: /why-simple/
             <li>🚫 #1 box avoidance cause: scent</li>
             <li>🌿 Natural = safer if ingested</li>
           </ul>
+          <p style="margin-top: 1rem;">
+            <a href="{{ site.purrify.howItWorks | utm('why-simple-sidebar') }}">How Purrify works naturally →</a>
+          </p>
         </div>
       </aside>
     </div>
@@ -89,53 +105,98 @@ permalink: /why-simple/
 </section>
 
 <!-- Benefits Section -->
-<section class="section comparison">
+<section class="section comparison" aria-labelledby="benefits-heading">
   <div class="container">
     <div class="section-header">
-      <h2>Benefits of Going Simple</h2>
+      <h2 id="benefits-heading">Benefits of Going Simple</h2>
       <p>
         When you strip away the unnecessary, you're left with what works.
+        See how <a href="/natural-options/">natural litter options</a> compare.
       </p>
     </div>
 
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="benefit-card__icon">✓</div>
+        <div class="benefit-card__icon" aria-hidden="true">✓</div>
         <h3>Better Box Acceptance</h3>
-        <p>Cats naturally prefer unscented, simple-textured materials.</p>
+        <p>Cats naturally prefer unscented, simple-textured materials.
+        <a href="{{ site.purrify.reviews | utm('why-simple') }}">See what cat owners say</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">💰</div>
+        <div class="benefit-card__icon" aria-hidden="true">💰</div>
         <h3>Better Value</h3>
-        <p>You're not paying for marketing gimmicks and unnecessary additives.</p>
+        <p>You're not paying for marketing gimmicks and unnecessary additives.
+        <a href="{{ site.purrify.products | utm('why-simple') }}">Shop simple solutions</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">🌍</div>
+        <div class="benefit-card__icon" aria-hidden="true">🌍</div>
         <h3>Better for Earth</h3>
-        <p>Simple ingredients often mean biodegradable, sustainable options.</p>
+        <p>Simple ingredients often mean biodegradable, sustainable options.
+        <a href="{{ site.purrify.sustainability | utm('why-simple') }}">Our eco-friendly approach</a>.</p>
       </div>
 
       <div class="benefit-card">
-        <div class="benefit-card__icon">❤️</div>
+        <div class="benefit-card__icon" aria-hidden="true">❤️</div>
         <h3>Better for Health</h3>
-        <p>Fewer chemicals means less exposure risk for cats and humans.</p>
+        <p>Fewer chemicals means less exposure risk for cats and humans.
+        <a href="{{ site.purrify.safety | utm('why-simple') }}">Safety first</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="cta-section">
+<!-- Science Section -->
+<section class="section" aria-labelledby="science-heading">
   <div class="container">
-    <h2>Simple Meets Science</h2>
+    <div class="section-header">
+      <h2 id="science-heading">The Science Behind Simple</h2>
+      <p>
+        Modern research confirms what cats have always known: natural materials work.
+      </p>
+    </div>
+    <div class="content-grid">
+      <div class="content-main">
+        <h3>Biochar: Nature's Odor Eliminator</h3>
+        <p>
+          <a href="{{ site.purrify.science | utm('why-simple-science') }}">Biochar</a>, a form of activated charcoal made from sustainable wood sources,
+          has been used for thousands of years to purify water and air. Its porous
+          structure traps odor molecules at the source.
+        </p>
+        <h3>Why Clumping Matters</h3>
+        <p>
+          Natural clumping clays like bentonite create tight, easy-to-scoop clumps
+          that make daily maintenance simple. This isn't a synthetic innovation—
+          it's a natural property of certain clay minerals.
+          <a href="/guide/">See our clumping guide</a>.
+        </p>
+      </div>
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h4>Research & Resources</h4>
+          <ul>
+            <li><a href="{{ site.purrify.science | utm('why-simple-resources') }}">Purrify Science Lab</a></li>
+            <li><a href="{{ site.purrify.blog | utm('why-simple-resources') }}">Cat Care Blog</a></li>
+            <li><a href="{{ site.purrify.faq | utm('why-simple-resources') }}">Expert FAQs</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section" aria-labelledby="simple-meets-science-heading">
+  <div class="container">
+    <h2 id="simple-meets-science-heading">Simple Meets Science</h2>
     <p>
       Purrify uses natural biochar—activated charcoal from sustainable wood—for
       powerful odor control without artificial fragrances or chemicals.
+      <a href="{{ site.purrify.about | utm('why-simple-cta') }}">Learn about our mission</a>.
     </p>
     <div class="cta-actions">
-      <a href="{{ site.purrify.products | utm('why-simple') }}" class="btn btn-primary btn-lg">
+      <a href="{{ site.purrify.products | utm('why-simple-primary') }}" class="btn btn-primary btn-lg">
         Try Purrify
       </a>
       <a href="/natural-options/" class="btn btn-secondary btn-lg">
