@@ -79,9 +79,6 @@
     "url": "{{ site.url }}",
     "logo": "{{ site.url }}/favicon.svg",
     "description": "{{ site.description }}",
-    "sameAs": [
-      "https://purrify.ca/"
-    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
@@ -188,5 +185,8 @@
   
   {# Skip to main content link for accessibility #}
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Replace CLOUDFLARE_BEACON_TOKEN with actual token from Cloudflare dashboard -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "CLOUDFLARE_BEACON_TOKEN"}'></script>
 </body>
 </html>
